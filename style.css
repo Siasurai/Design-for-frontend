@@ -1,0 +1,366 @@
+*{
+	box-sizing: border-box;
+	font-family: Roboto, Roboto Condensed, Roboto Slab;
+  	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+}
+header{
+	width: 100%;
+	background: #EEEFF1;
+}
+footer{
+	background-color: #34547A;
+}
+progress{
+	min-width: 95%;
+	height: 4px;
+}
+ul{
+	padding: 0;	
+	margin: 0;
+}
+.container{
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 1.5% 0 1%;
+	background: rgb(238, 239, 241, .7);
+	z-index: 100;
+}
+.header-list{ 
+	margin: 10px 0;
+	padding: 0;
+	text-align: center;
+}
+.header-list li{
+	display: inline;
+}
+.header-list a{
+	display: inline-block;
+	padding: 5px 21px;
+	color: #000000;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.header-list a:hover{
+	color: #34547A;
+}
+.about-me{
+	display: flex;
+	justify-content: center;
+	padding: 100px;
+}
+.prof{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 14%;
+}
+.my-skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 30px;
+	width: 100%;
+	margin: 0 auto;
+}
+.frame{
+	max-width: 100%;
+}
+.frame-text{
+	padding: 0 10% 10%;
+}
+.frame-text h1{
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 79px;
+}
+.frame-text p{
+	padding: 60px 0;
+	color: #727272;;
+	font-size: 16px;
+	line-height: 26px;
+}
+.frame-text button, .order-article button{
+	width: 225px;
+	height: 65px;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	border: 0;
+	padding: 0;
+	color: #FFFFFF;
+	background: #34547A;
+}
+.photo-skills {
+	align-self: center;
+}
+.photo-skills img{
+	width: 100%
+}
+.progress{
+	align-self: center;
+}
+.progress li{
+	padding: 20px 0;
+	list-style-type: none;
+	color: #727272;
+}
+.order-article{
+	text-align: center;
+	width: 540px;
+}
+h2.about-me-title, .progress-title, .how-work-title, .order-title{
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 37px;
+	color: black;
+}
+.order{
+	padding: 100px;
+}
+p.about-me-text, .how-work-text, .order-text{
+	padding-top: 50px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #727272;
+}
+.about-me-article, .how-work-article {
+	text-align: center;
+	max-width: 540px;
+}
+.icons{
+	padding: 6% 5%;
+	background-color: #34547A;
+}
+.icons-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 100%;
+}
+.icons-photo{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.icons-photo p{
+	font-size: 16px;
+	line-height: 26px;
+	color: #FFFFFF;
+	margin: 0;
+}
+.skills{
+	padding: 102px;
+}
+.how-work{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 100px;
+	width: 100%;
+	text-align: center;
+	background-color: #EEEFF1;	
+}
+.how-work-video{
+	width: 100%;
+	height: auto;
+	padding-top: 5%;
+}
+.video {
+	position: relative;
+	width: 100%;
+}
+.play{
+	position: absolute;
+	z-index: 10;
+	left: 45%;
+	top: 45%;
+}
+.projects{
+	width: 100%;
+	margin-top: 28px;
+}
+.projects-photo{
+	display: grid;
+	grid-template-columns: repeat(4, minmax(150px, 25%));
+}
+.projects-photo > div{
+	height: 100%;
+}
+.grid-photo > img{
+	width: 100%;
+	height: 100%;
+}
+div.grid-photo{
+	position: relative;
+}
+.grid-photo::before{
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+	visibility: hidden;
+}
+.eye{
+	position: absolute;
+	left: 35%;
+	top: 35%;
+	max-width: 30%;
+	max-height: 30%;
+	visibility: hidden;
+}
+.grid-photo:hover .eye, .grid-photo:hover:before{
+	visibility: visible;
+}
+.clients{
+	padding: 72px 0;
+}
+.clients-grid{
+	display: grid;
+	grid-template-columns: repeat(4, minmax(150px, 25%));
+	grid-column-gap: 30px;
+}
+.clients-photo img{
+	width: 100%;
+}
+.order{
+	background-color: #EEEFF1;
+}
+.footer-info{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+.social-botton{
+	display: flex;
+}
+.social-botton img{
+	padding-right: 22px;
+}
+.name h3{
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 25px;
+	color: #FFFFFF;
+}
+.name div{
+	font-size: 13px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+.form{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(4, 50px);
+	grid-row-gap: 20px;
+	grid-column-gap: 30px;
+	padding: 40px 0;
+}
+input, textarea {
+	border: none;
+	padding: 15px;
+	outline: none;
+}
+textarea {
+	resize: none;
+	width: 100%;
+	grid-column: 1 / 3;
+	grid-row: 2 / 7;
+}
+#name, #mail{
+	width: 100%;
+}
+.center-block{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.logo{
+	padding:30px 10px 0;
+	font-size: 40px;
+}
+.logo a{
+	color: #ffffff;
+}
+
+
+
+@media (max-width: 850px) and (min-width: 600px) {
+	.container {
+		position:relative;
+        display:flex;
+        justify-content:center;
+        max-width:90%;
+	}
+	.prof {
+		flex-direction:column;
+	}
+	.frame-text {
+		text-align:center;
+	}
+	.clients-grid {
+		display:flex;
+	}
+	.icons{
+		display:none; 
+	}
+	.skills, .about-me {
+		padding:6%;
+	}
+}
+@media (max-width: 600px) and (min-width: 350px) {
+	.container {
+		display:inline;
+		position:relative;
+	}
+	.container::before {
+		content: "|||";
+		position: relative;
+        left: 0;
+        padding-left:450px;
+	}
+	.header-list li{ 
+    display:block;
+    text-align:right;
+	}
+	.header-list {
+		display: none;
+	}
+	.prof {
+		flex-direction:column;
+		padding-top: 35%;
+	}
+	.frame-text {
+		text-align:center;
+	}
+	.frame-text > p, p.about-me-text, p.how-work-text, p.order-text{
+		font-size: 20px;
+		padding: 0;
+	}
+	.frame-text h1 {
+        font-size: 2em;
+	}
+	.about-me {
+		padding: 6%;
+	}
+	.projects-photo > img {
+		max-width:100%;
+	}
+	.icons, .clients{
+		display:none; 
+	}
+}
